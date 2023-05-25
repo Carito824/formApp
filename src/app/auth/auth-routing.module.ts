@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { RegistrerPageComponent } from './pages/registrer-page/registrer-page.component';
+import { RegisterPageComponent } from './pages/registrer-page/registrer-page.component';
+
 
 const routes: Routes = [
   {
     path: '',
     children: [
-      {path: 'sing-up', component: RegistrerPageComponent},
-      {path: '**', redirectTo: 'sing-up'},
+      { path: 'sign-up', component: RegisterPageComponent },
+      { path: '**', redirectTo: 'sign-up' },
     ]
   }
-    
 ];
 
 @NgModule({
